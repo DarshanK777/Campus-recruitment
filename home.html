@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+
+
+
+</head>
+<body>
+	<header>
+	<div id="navbar">
+  <a href="home.html">Home</a>
+  <a href="Login.php">SignUp</a>
+  <a href="contactus.html">ContactUs</a>
+  <a href="aboutus.html">AboutUs</a>
+</div>
+</header>
+<section class="box1">
+		<div class="brief">
+			<div id="title">Campus Recruitment</div>
+			<div id="text">The Application allows the student to apply for the companies by sending over the detail and resume.The eligible companies for the student is shown.The companis visit the site to check over the resumes applied by the student for them respectively.
+			</div>
+		</div>
+	</section>
+	<section class ="box2">
+		<div class="brief2h">
+			<div id="text2">Our Recruiters</div>
+		</div>
+		<div class=" cimages">
+			<div class="i1">
+				<img src="images/c1.png">
+			</div>
+			<div class="i1"><img src="images/c2.png"></div>
+			<div class="i1"><img src="images/c3.png"></div>
+			<div class="i4"><img src="images/c4.png"></div>
+			<div class="i5"><img src="images/c5.png"></div>
+		</div>
+		</section>
+
+	<section class="box3">
+		<div class="left_footer">
+			<div id="text3">
+				REACH OUT
+			</div>
+		</div>
+
+		<div class="right_footer">
+			
+				<p>Contact Us</p>
+
+				<form method="POST">
+					
+					<input type="email" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+				
+				<?php 
+				function test_input($data) {
+				  $data = trim($data);
+				  $data = stripslashes($data);  
+				  $data = htmlspecialchars($data);  
+				  return $data; 
+				}
+
+
+				$emailErr = $messageErr "";
+				$email = $message"";
+				 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+					if (empty($_POST["email"])) {
+					 	$emailErr = "Email is required";  
+					} else {
+				 		$email = test_input($_POST["email"]);  
+					}
+					
+					if (empty($_POST["message"])) {
+					 	$messageErr = "Email is required";  
+					} else {
+				 		$message = test_input($_POST["message"]);  
+					}
+
+
+
+
+
+
+
+				 ?>
+
+				
+				</form>
+
+			</div>
+			
+			
+		</div>
+		
+		
+	</section>
+
+
+<script src="js/jsfile.js">
+</script>
+</body>
+</html>

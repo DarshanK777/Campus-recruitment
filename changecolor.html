@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<script type="text/javascript">
+			function changecolor(color) {
+				// getElementsByTagName as we are changing tha body color.
+				document.getElementsByTagName('body')[0].style.backgroundColor=color.value;
+			}
+		</script>
+	</head>
+	<body>
+		<select size="1" onchange="changecolor(this);">
+			<option value="select">Select color</option>
+			<option value="red">Red</option>
+			<option value="yellow">Yellow</option>
+			<option value="green">Green</option>
+		</select>
+	</body>
+</html>

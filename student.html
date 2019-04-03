@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<title>Student</title>
+	<link rel="stylesheet" type="text/css" href="student.css">
+	<script type="text/javascript" src="student.js"></script>
+</head>
+<body>
+	<div>
+		<form method="POST" action="student.php">
+			<h3>WELCOME</h3>
+			<div>
+				<div>
+					<input type="paragraph" name="text">
+					Description
+				</div>
+				<div>
+					<input type="image" name="img" style="padding-left: 1000px">
+					Photograpg
+				</div>
+			</div>	
+			<div>
+				<!-- Tab links -->
+				<div class="tab">
+				  <button class="tablinks" onclick="openCity(event, 'SSC')">SSC Marks</button>
+				  <button class="tablinks" onclick="openCity(event, 'Pointer')">Semester Pointer</button>
+				  <button class="tablinks" onclick="openCity(event, 'Workshops')">Workshops</button>
+				  <button class="tablinks" onclick="openCity(event, 'Internships')">Internships</button>
+				</div>
+
+				<!-- Tab content -->
+				<div id="SSC" class="tabcontent">
+				  <h3>Marks</h3>
+				  <p>Marks obtained in 10th = <input type="text"> %<br>
+				  Marks obtained in 12th = <input type="text"> %</p>
+
+				</div>
+
+				<div id="Pointer" class="tabcontent">
+				  <h3>Semester Pointer</h3>
+				  <ul>
+				  	<li>Semester 1 = <input type="text"></li>
+				  	<li>Semester 2 = <input type="text"></li>
+				  	<li>Semester 3 = <input type="text"></li>
+				  	<li>Semester 4 = <input type="text"></li>
+				  	<li>Semester 5 = <input type="text"></li>
+				  	<li>Semester 6 = <input type="text"></li>
+				  	<li>Semester 7 = <input type="text"></li>
+				  	<li>Semester 8 = <input type="text"></li>			  	
+				  </ul>
+				</div>
+
+				<div id="Workshops" class="tabcontent">
+				  <h3>Workshops</h3>
+				  List of Workshops attended
+				  <ol>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  </ol>
+				</div>	
+				<div id="Internships" class="tabcontent">
+				  <h3>Internships</h3>
+				  List of Internships done
+				  <ol>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  	<li><input type="text"></li>
+				  </ol>
+				</div>			
+			</div>
+			<div>
+				  <button></button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

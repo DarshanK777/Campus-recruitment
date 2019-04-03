@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<team_details>
+  <member>
+    <name>Lovkesh Sharma</name>
+    <designation>Scripting</designation>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur</description>
+  </member>
+  <member>
+    <name>Rajeshwari Bajre</name>
+    <designation>Designing</designation>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur</description>
+  </member>
+  <member>
+    <name>Abhishek Dixit</name>
+    <designation>Database</designation>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur</description>
+  </member>
+  <member>
+    <name>Darshan Kadam</name>
+    <designation>Designing</designation>
+    <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur</description>
+  </member>
+  
+</team_details>

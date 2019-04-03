@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<title>About Us</title>
+</head>
+<header>
+	<div id="navbar">
+  <a href="home.html">Home</a>
+  <a href="Login.php">SignUp</a>
+  <a href="contactus.html">ContactUs</a>
+  <a href="aboutus.html">AboutUs</a>
+</div>
+</header>
+<body>
+	<div class="box1">
+		
+		<h1>About us:</h1>
+	</div>
+	<div class = "context1">
+		<div class = "scontext1"><p><strong>"The ones enough to think they can change the World, Are the ones who do"</strong></p></div>
+<hr>
+
+<div id = "titlex">Our Team</div>
+<hr>
+<div class="row1">
+	<div class="imag1">
+		<img src="images/y.jpg">
+	</div>
+	<div class="text1">
+		<div id="title1">
+			Lovkesh Sharma
+		</div>
+		<div id="designation1">Scripting</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur.
+	</div>
+</div>
+<hr>
+<div class="row2">
+	<div class="imag2">
+		<img src="images/x.jpg">
+	</div>
+	<div class="text2">
+		<div id="title2">
+			Rajeshwari Bajre
+		</div>
+		<div id="designation2">Designing</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur.
+	</div>
+</div>
+<hr>
+<div class="row3">
+	<div class="imag3">
+		<img src="images/z.jpeg">
+	</div>
+	<div class="text3">
+		<div id="title3">
+			Abhisek Dixit
+		</div>
+		<div id="designation3">Database</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur.
+	</div>
+</div>
+<hr>
+<div class="row4">
+	<div class="imag4">
+		<img src="images/z1.jpeg">
+	</div>
+	<div class="text4">
+		<div id="title4">
+			Darshan Kadam
+		</div>
+		<div id="designation4">Designing</div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae eligendi nesciunt, qui eveniet quo temporibus amet suscipit, architecto atque sint quae omnis nihil nam at reiciendis rerum eum rem tenetur.
+	</div>
+</div>
+</div>
+
+
+	<section class="box3">
+		<div class="left_footer">
+			<div id="text3">
+				REACH OUT
+			</div>
+		</div>
+
+		<div class="right_footer">
+			
+				<p>Contact Us</p>
+
+				<form method="POST">
+					
+					<input type="email" name="email" placeholder="Email" />
+					<textarea name="message" placeholder="Message"></textarea>
+					<button>Send</button>
+				
+				<?php 
+				function test_input($data) {
+				  $data = trim($data);
+				  $data = stripslashes($data);  
+				  $data = htmlspecialchars($data);  
+				  return $data; 
+				}
+
+
+				$emailErr = $messageErr "";
+				$email = $message"";
+				 if ($_SERVER["REQUEST_METHOD"] == "POST") { 
+					if (empty($_POST["email"])) {
+					 	$emailErr = "Email is required";  
+					} else {
+				 		$email = test_input($_POST["email"]);  
+					}
+					
+					if (empty($_POST["message"])) {
+					 	$messageErr = "Email is required";  
+					} else {
+				 		$message = test_input($_POST["message"]);  
+					}
+
+
+
+
+
+
+
+				 ?>
+
+				
+				</form>
+
+			</div>
+			
+			
+		</div>
+		<script src="js/jsfile.js">
+</script>
+</body>
+</html>
